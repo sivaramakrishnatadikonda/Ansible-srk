@@ -12,9 +12,9 @@
         private: true
 
         tasks:
-        - name : please enter user information
-          ansible.builtin.debug: 
-            msg: "please enter username: {{ USERNAME }}, password is : {{ PASSWORD }}"
+          - name : please enter user information
+            ansible.builtin.debug: 
+             msg: "please enter username: {{ USERNAME }}, password is : {{ PASSWORD }}"
 
 
     
