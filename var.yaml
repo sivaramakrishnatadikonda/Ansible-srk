@@ -3,8 +3,13 @@
    connection: local
    vars_files:
     - playbook.yaml
+   vars:
+   COURSE: devops with aws
+   DURATION: 120 hours
+   TIMEING: moring 7:15
+
 
    tasks:
     - name: print varaibles
       ansible.builti.debug:
-      msg: " varaibles are"
+      msg: " course name is {{ COURSE }}. duration is {{ DURATION }}, class timeing is  {{ TIMEING }}"
