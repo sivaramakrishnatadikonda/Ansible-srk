@@ -5,6 +5,6 @@
     - playbook.yaml
 
    tasks:
-   - name: print the file data
-     ansible.builti.debug:
+    - name: print the file data
+      ansible.builti.debug:
       msg: " print the data"
