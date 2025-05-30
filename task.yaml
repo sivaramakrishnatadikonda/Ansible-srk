@@ -1,4 +1,4 @@
-- name: variable
+- name: play level variables
   hosts: local
   connection: local
   vars:
@@ -7,6 +7,6 @@
   STARTDATE: 28th april
   ENDDATE: august 28th
   tasks:
-   - name: print variable
+   - name: print course information
      ansible.builtin.debug:
       msg: "Hello good evening course:{{ COURSE }}, duration: {{ DURATION }}, startdate:  {{ STARTDATE }}, enddate: {{ ENDDATE }}"
