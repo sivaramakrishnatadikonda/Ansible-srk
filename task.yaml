@@ -1,0 +1,12 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars:
+  COURSE: aws
+  DURATION: 120 hours
+  STARTDATE: 28th april
+  ENDDATE: august 28th
+  tasks:
+   - name: print global variables
+     ansible.builtin.debug:
+      msg: "Hello good evening course:{{ COURSE }}, duration: {{ DURATION }}, startdate:  {{ STARTDATE }}, enddate: {{ ENDDATE }}"
