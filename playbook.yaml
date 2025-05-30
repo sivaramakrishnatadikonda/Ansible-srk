@@ -1,6 +1,11 @@
-- name: ping the server
-  hosts: frontend
+- name: course
+  hosts: local 
+  connection: local
+  vars:
+  COURSE: devops with aws
+  DURATION: 120 hours
+  TIMING: moring 7:15
   tasks:
-
-   - name: ping the server
-     ansible.builtin.ping:
+   - name: print course
+     ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, duration is {{ DURATION }}, class timing are  {{ TIMING }} "

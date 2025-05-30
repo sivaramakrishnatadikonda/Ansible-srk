@@ -1,15 +1,9 @@
- - name: varibles from file
-   hosts: local
-   connection: local
-   vars_files:
-    - playbook.yaml
-   vars:
-   COURSE: devops with aws
-   DURATION: 120 hours
-   TIMEING: moring 7:15
-
-
-   tasks:
-    - name: print varaibles
-      ansible.builti.debug:
-      msg: " course name is {{ COURSE }}. duration is {{ DURATION }}, class timeing is  {{ TIMEING }}"
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_files:
+  - playbook.yaml
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "Hello I am learning {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
