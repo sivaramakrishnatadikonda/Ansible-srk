@@ -1,4 +1,4 @@
- - name: call the varibles
+ - name: varibles
    hosts: local
    connection: local
    vars_files:
