@@ -1,4 +1,4 @@
-- name: variables from files
+- name: global variables
   hosts: local
   connection: local
   vars:
