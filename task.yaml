@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-  COURSE: aws
-  DURATION: 120 hours
-  STARTDATE: 28th april
-  ENDDATE: august 28th
+    COURSE: aws
+    DURATION: 120 hours
+    STARTDATE: 28th april
+    ENDDATE: august 28th
   tasks:
    - name: print course information
      ansible.builtin.debug:
